@@ -3,31 +3,78 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --mainText: #1e1e1e;
+  --background: #fafcfd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --mainText: #fbfafc;
+    --background: #171717;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--mainText);
+  background: var(--background);
+}
+
+.buttonPrimary {
+  @apply bg-primaryBlue uppercase px-10  rounded-sm w-max font-medium text-white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.animation-down {
+  animation: scrollDown 15s linear infinite;
+}
+
+.animation-up {
+  animation: scrollUp 15s linear infinite;
+}
+
+.lightgradient {
+  background-image: linear-gradient(
+    to bottom,
+
+    rgb(250, 252, 253) 10%,
+    rgba(255, 0, 0, 0) 18%,
+    rgba(255, 0, 0, 0) 82%,
+    rgb(250, 252, 253) 90%
+  );
+}
+
+@media (prefers-color-scheme: dark) {
+  .lightgradient {
+    background-image: linear-gradient(
+      to bottom,
+
+      rgb(23, 23, 23) 10%,
+      rgba(255, 0, 0, 0) 18%,
+      rgba(255, 0, 0, 0) 82%,
+      rgb(23, 23, 23) 90%
+    );
   }
 }

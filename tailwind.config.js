@@ -6,11 +6,40 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "16px",
+        sm: "16px",
+        lg: "16px",
+        xl: "20px",
+      },
+    },
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
+
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primaryBlue: "#3366FF",
+        traffic: "#F5E9CB",
+        "traffic-border": "#A07C22",
+        water: "#D1E4FA",
+        "water-border": "#2863B8",
+        road: "#F3DFCC",
+        "road-border": "#5F380E",
+        power: "#101012",
+        "power-border": "#F66A57",
       },
     },
   },

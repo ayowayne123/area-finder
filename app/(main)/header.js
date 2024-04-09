@@ -18,9 +18,9 @@ function Header() {
   return (
     <div className="container flex flex-row justify-between items-center pt-6 pb-3 h-20">
       {isDarkMode ? (
-        <Image src={darkLogo} alt="dark logo" />
+        <Image src={darkLogo} alt="dark logo" priority/>
       ) : (
-        <Image src={lightLogo} alt="light logo" />
+        <Image src={lightLogo} alt="light logo" priority/>
       )}
 
       <Link

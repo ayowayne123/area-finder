@@ -12,10 +12,10 @@ export const metadata = {
 export default function Home() {
   const displayedCards = cardData.slice(0, 10);
   const firstColumn = displayedCards.slice(0, 5);
-  const secondColumn = displayedCards.slice(5, 10);
+  const secondColumn = displayedCards.slice(5, 10); 
 
   return (
-    <main className="lg:flex flex-row items-center justify-between container lg:min-h-[900px] overflow-hidden lg:max-h-screen lg:h-auto h-screen">
+    <main className="lg:flex flex-row items-center justify-between container lg:min-h-[750px] overflow-hidden lg:max-h-screen lg:h-auto h-screen">
       {/* Left Hero Items with search form */}
       <div className="xl:w-[507px] lg:w-[480px] flex flex-col xl:gap-10 lg:gap-8 md:gap-6 gap-4 h-full items-center justify-center ">
         <h1 className="xl:text-[64px] text-4xl md:text-5xl lg:text-6xl xl:leading-[77.5px] font-bold">

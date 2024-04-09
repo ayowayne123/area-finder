@@ -35,7 +35,7 @@ function AllReviewsPage() {
               <Card key={card.id} {...card} index={index} />
             ))}
     </div>
-    <div className="md:items-end pt-8 hidden md:flex ">
+    <div className=" pt-8 hidden md:flex ">
       <div className="grid grid-cols-2 gap-4 ">
         <Image placeholder="blur" src={image1} alt="Grid image" className="object-cover w-[236px] h-[223px] rounded-lg overflow-hidden"/>
         <Image placeholder="blur" src={image2} alt="Grid image" className="object-cover w-[236px] h-[223px] rounded-lg overflow-hidden"/>

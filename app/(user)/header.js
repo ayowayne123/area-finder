@@ -148,7 +148,7 @@ function SearchHeader() {
                <Image src={lightLogo} alt="light logo" priority />
               </Link>
           )}
- <div className="w-full max-w-[778px] justify-start hidden md:flex ">
+ <div className="w-full w-[778px] justify-start hidden md:flex ">
       <div className="relative ">
         <div className="flex items-center">
           <span className="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -163,7 +163,7 @@ function SearchHeader() {
           />
           {searchQuery && (
             <button
-              className="absolute inset-y-0 right-4 flex items-center pr-3text-[#1e1e1e] dark:text-[#fafbfc]"
+              className="absolute inset-y-0 right-4 flex items-center pr-3 text-[#1e1e1e] dark:text-[#fafbfc]"
               onClick={clearSearchQuery}
             >
               <AiOutlineClose />
@@ -198,7 +198,7 @@ function SearchHeader() {
           />
           {searchQuery && (
             <button
-              className="absolute inset-y-0 right-4 flex items-center pr-3text-[#1e1e1e] dark:text-[#fafbfc]"
+              className="absolute inset-y-0 right-4 flex items-center pr-3 text-[#1e1e1e] dark:text-[#fafbfc]"
               onClick={clearSearchQuery}
             >
               <AiOutlineClose />

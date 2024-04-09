@@ -27,14 +27,14 @@ export default function Home() {
           neighbourhood you might have in mind.
         </div>
         <div className="flex flex-col w-full gap-5">
-          <div className="relatve pl-6 pr-3 py-3 w-full">
+          <div className="relative w-full">
           <span className="absolute inset-y-0 left-0 flex items-center pl-3">
             <AiOutlineSearch className="text-[#1e1e1e] dark:text-[#fafbfc]" />
           </span> 
           <input
             type="search"
             placeholder="Enter Address"
-            className="w-full rounded-md bg-[#F3F7FE] border-[#D4DCF1] border dark:bg-[#242428] dark:border-[#242428] outline-none"
+            className="w-full pl-6 pr-3 py-3  rounded-md bg-[#F3F7FE] border-[#D4DCF1] border dark:bg-[#242428] dark:border-[#242428] outline-none"
           />
           </div>
           

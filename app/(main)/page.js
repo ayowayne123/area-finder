@@ -34,7 +34,7 @@ export default function Home() {
           <input
             type="search"
             placeholder="Enter Address"
-            className="w-full pl-9 pr-3 py-3 placeholder:text-[#fafbfc] dark:placeholder:text-[#1e1e1e] rounded-md bg-[#F3F7FE] border-[#D4DCF1] border dark:bg-[#242428] dark:border-[#242428] outline-none"
+            className="w-full pl-9 pr-3 py-3 dark:placeholder:text-[#fafbfc] placeholder:text-[#1e1e1e] rounded-md bg-[#F3F7FE] border-[#D4DCF1] border dark:bg-[#242428] dark:border-[#242428] outline-none"
           />
           </div>
           

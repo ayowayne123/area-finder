@@ -148,7 +148,7 @@ function SearchHeader() {
                <Image src={lightLogo} alt="light logo" priority />
               </Link>
           )}
- <div className=" w-[778px]  hidden md:flex ">
+ <div className=" w-[778px]  hidden md:block ">
       <div className="relative ">
         <div className="flex items-center">
           <span className="absolute inset-y-0 left-0 flex items-center pl-3">

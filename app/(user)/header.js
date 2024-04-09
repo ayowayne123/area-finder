@@ -137,7 +137,7 @@ function SearchHeader() {
     <div className="w-full h-[375px] md:h-[195px] bg-[#F2F6FD] dark:bg-[#171717] fixed z-20">
       <Toaster/>
       <div className="container flex flex-col h-full">
-        <div className=" flex flex-row justify-between items-center h-20">
+        <div className=" flex flex-row justify-between items-center h-20 gap-6">
           {isDarkMode ? (
             <Link href="/">
                <Image src={darkLogo} alt="light logo" priority />
@@ -148,7 +148,7 @@ function SearchHeader() {
                <Image src={lightLogo} alt="light logo" priority />
               </Link>
           )}
- <div className="w-full w-[778px] justify-start hidden md:flex ">
+ <div className=" w-[778px]  hidden md:flex ">
       <div className="relative ">
         <div className="flex items-center">
           <span className="absolute inset-y-0 left-0 flex items-center pl-3">
